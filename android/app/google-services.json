@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "704679234342",
+    "project_id": "portofolio-e5890",
+    "storage_bucket": "portofolio-e5890.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704679234342:android:fb781e58c6bc2397038fe7",
+        "android_client_info": {
+          "package_name": "com.porto.portofo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPOrjdEkWXqNyZG8lah0QCVTDPcR0N90A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
