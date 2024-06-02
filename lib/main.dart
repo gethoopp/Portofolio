@@ -8,12 +8,12 @@ import 'package:porto/bloc/data_bloc.dart';
 import 'package:porto/controller/routes/routes.dart';
 import 'package:porto/cubit/authcubit_cubit.dart';
 import 'package:porto/firebase_options.dart';
-import 'package:porto/liquid/liquid.dart';
+import 'package:porto/view/About_page/about.dart';
 import 'package:porto/view/Auth_page/login.dart';
-import 'package:porto/view/Auth_page/register.dart';
 import 'package:porto/view/detail_page/detail.dart';
+
 import 'package:porto/view/homepage/homepage.dart';
-import 'package:porto/view/portofolio_page/porto1.dart';
+
 
 void main() async {
   runApp(const MyApp());
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
         child: GetMaterialApp(
           debugShowCheckedModeBanner: false,
           getPages: approute(),
-          home:  const Homepage(),
+          home:  const LoginPage(),
         ),
       ),
     );

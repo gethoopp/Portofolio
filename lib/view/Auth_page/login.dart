@@ -55,8 +55,14 @@ class _LoginPageState extends State<LoginPage> {
             child: Padding(
               padding: const EdgeInsets.only(top: 30),
               child: FloatingActionButton(
-                onPressed: () {
+                onPressed: () async{
                   context.read<AuthCubit>().login(email.text, password.text);
+
+                  Future.delayed( const Duration(seconds: 1),
+                    () =>   Get.toNamed('/Home')
+                  );
+
+                
                 },
                 backgroundColor: Colors.blue,
                 focusElevation: 20,

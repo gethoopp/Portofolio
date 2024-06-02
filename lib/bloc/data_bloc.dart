@@ -9,6 +9,7 @@ class DataBloc extends Bloc<DataEvent, DataState> {
   final service = Provider();
   DataBloc() : super(DataInitial()) {
     on<NewData>((event, emit) async {
+      Future.delayed(Duration(seconds: 2));
       try {
         final result = await service.getResult();
 

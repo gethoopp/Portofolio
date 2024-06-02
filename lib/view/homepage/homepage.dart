@@ -18,7 +18,11 @@ class Homepage extends StatelessWidget {
             children: [
               Padding(
                 padding:  EdgeInsets.only(top: size.height * 0.1,left: size.width * 0.05),
-                child: Text('About',style: GoogleFonts.aBeeZee(color: Colors.white,fontSize: 25),),
+                child: GestureDetector(
+                  onTap: () => Get.toNamed(
+                    '/About'
+                  ),
+                  child: Text('About',style: GoogleFonts.aBeeZee(color: Colors.white,fontSize: 25),)),
               ),
 
 
@@ -60,7 +64,9 @@ class Homepage extends StatelessWidget {
 
               Padding(
                 padding:  EdgeInsets.only(top: size.height * 0.2,left: size.width * 0.05),
-                child: Text('Portofolio',style: GoogleFonts.aBeeZee(color: Colors.white,fontSize: 25),),
+                child: GestureDetector(
+                  onTap: () => Get.toNamed('/Portofolio'),
+                  child: Text('Portofolio',style: GoogleFonts.aBeeZee(color: Colors.white,fontSize: 25),)),
               )
             ],
           ),

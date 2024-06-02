@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:porto/controller/controler.dart';
 import 'package:porto/cubit/authcubit_cubit.dart';
@@ -53,8 +55,14 @@ class _LoginPageState extends State<RegisterPage> {
             child: Padding(
               padding: const EdgeInsets.only(top: 30),
               child: FloatingActionButton(
-                onPressed: () {
+                onPressed: () async{
                   context.read<AuthCubit>().singUp(email.text, password.text);
+
+                  Future.delayed(const Duration(seconds: 1),
+                  () => Get.toNamed('/Home')
+                  );
+
+                  
                 },
                 backgroundColor: Colors.blue,
                 focusElevation: 20,

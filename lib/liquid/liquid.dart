@@ -21,7 +21,7 @@ class Liquid extends StatelessWidget {
   Widget build(BuildContext context) {
     return Builder(
       builder: (context) =>
-          LiquidSwipe(waveType: WaveType.circularReveal, pages: pages),
+          LiquidSwipe(waveType: WaveType.liquidReveal, pages: pages),
     );
   }
 }
